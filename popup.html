@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Customizer</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 10px;
+      width: 250px;
+    }
+    .option {
+      margin: 10px 0;
+    }
+    label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+    button {
+      background-color: #007bff;
+      color: white;
+      border: none;
+      padding: 5px 10px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <h2>Customize Page</h2>
+  <div class="option">
+    <label for="theme">Choose Theme:</label>
+    <select id="theme">
+      <option value="dark">Dark</option>
+      <option value="beige">Beige</option>
+      <option value="lightGrey">Light Grey</option>
+    </select>
+  </div>
+  <div class="option">
+    <label for="fontColor">Font Color:</label>
+    <input type="color" id="fontColor" value="#ffffff">
+  </div>
+  <button id="applyChanges">Apply Changes</button>
+</body>
+<script src="popup.js"></script>
+</html>
